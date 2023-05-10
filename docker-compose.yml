@@ -2,7 +2,7 @@ version: '3'
 
 services:
   ubuntu:
-    image: ubuntu-desktop-lxde-vnc
+    image: dorowu/ubuntu-desktop-lxde-vnc
     environment:
       - VNC_PASSWORD=123456
     volumes:
