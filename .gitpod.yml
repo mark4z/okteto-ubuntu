@@ -1,4 +1,0 @@
-image: ubuntu:22.04
-tasks:
-  - init: |
-      apt update && apt install -y git
