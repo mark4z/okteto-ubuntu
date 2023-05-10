@@ -2,9 +2,11 @@ version: '3'
 
 services:
   ubuntu:
-    image: dorowu/ubuntu-desktop-lxde-vnc
+    image: fredblgr/ubuntu-novnc:20.04
     environment:
-      - VNC_PASSWORD=123456
+      - USER=root
+      - PASSWORD=123456
+      - RESOLUTION=1680x1050
     ports:
       - "80:80"
       - "5900:5900"
