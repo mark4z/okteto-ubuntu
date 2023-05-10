@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  ubuntu:
+    image: ubuntu-desktop-lxde-vnc
+    environment:
+      - VNC_PASSWORD=123456
+    volumes:
+      - "/dev/shm:/dev/shm"
+    ports:
+      - "80:80"
+      - "5900:5900"
